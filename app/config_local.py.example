@@ -1,0 +1,27 @@
+"""
+Arquivo de exemplo para configurações locais.
+Copie este arquivo para config_local.py e ajuste as configurações conforme necessário.
+"""
+
+# Configurações de Trading
+TRADING_CONFIG = {
+    'ticker': 'BTC-USD',  # Ativo para análise
+    'timeframe': '15min',  # Intervalo de tempo dos dados
+    'capital_inicial': 10000,  # Capital inicial para simulações
+    'stop_loss_pct': 0.02,  # Stop loss em porcentagem
+    'take_profit_pct': 0.04,  # Take profit em porcentagem
+}
+
+# Configurações da API (substitua com suas chaves reais)
+API_CONFIG = {
+    'api_key': 'SUA_API_KEY_AQUI',
+    'api_secret': 'SUA_API_SECRET_AQUI',
+    'base_url': 'https://api.exchange.com'  # URL base da API
+}
+
+# Configurações de Log
+LOG_CONFIG = {
+    'level': 'INFO',  # Nível de log (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+    'file': 'trading.log',  # Arquivo de log
+    'format': '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+} 
